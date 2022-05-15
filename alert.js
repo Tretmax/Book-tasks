@@ -204,5 +204,59 @@
 //         break
 // }
 // Task 17
+// function checkAge(age) {
+//     if (age > 18) {
+//       return true;
+//     } else {
+//       return confirm('Родители разрешили?');
+//     }
+//   }
 
+//   function checkAge(age) {
+// return age>18 ? true : confirm('Родители разрешили?')
+// return age>18 || confirm('Родители разрешили?')
+// }
+//   Task 18
+// function min(a, b){
+//     // if (a<b) {
+//     //     return a;
+//     //     }
+//     //     return b;
 
+// return a<b ? a : b
+
+// }
+
+// Task 18
+// function pow(x, n) {
+//     let result = 1
+//     for (let i = 0; i < n; i++) {
+//         result = result * x
+//     }
+//     return result;
+// }
+// let x = +prompt("input x: ", "")
+// let n = +prompt("input n: ", "")
+// if (n < 0) { alert("input positive mumber") }
+// else { alert(pow(x, n)) }
+
+// Task 18
+// function ask(question, yes, no) {
+//     if (confirm(question)) yes()
+//     else no();
+//   }
+
+//   ask(
+//     "Вы согласны?",
+//     function() { alert("Вы согласились."); },
+//     function() { alert("Вы отменили выполнение."); }
+//   );
+
+// let ask = (question, yes, no) => {
+//     confirm(question) ? yes() : no()
+// }
+// ask(
+//     "Вы согласны?",
+//     () => alert("Вы согласились."),
+//     () => alert("Вы отменили выполнение.")
+// )
