@@ -456,14 +456,82 @@
 
 // Task 33
 
-let arr = ["HTML", "JavaScript", "CSS"];
-function copySorted(arr) {
-    let result = arr.slice(). sort ()
-    return result
+// let arr = ["HTML", "JavaScript", "CSS"];
+// function copySorted(arr) {
+//     let result = arr.slice(). sort ()
+//     return result
+// }
+
+
+// let sorted = copySorted(arr);
+
+// alert( sorted ); // CSS, HTML, JavaScript
+// alert( arr ); // HTML, JavaScript, CSS (без изменений)
+
+// Task34
+// let user ={};
+// user.name = 'John'
+// user.surName = 'Smith'
+// user.name = 'Pete'
+// delete (user.name)
+// console.log (user)
+
+// Task 35
+
+// let schedule = {};
+
+// function isEmpty (obj){
+// for (let key in obj){
+
+//     return false
+// }
+// return true;
+
+// }
+// alert( isEmpty(schedule) ); // true
+
+// schedule["8:30"] = "get up";
+
+// alert( isEmpty(schedule) ); // false
+
+// Task 36
+// let salaries = {
+//     John: 100,
+//     Ann: 160,
+//     Pete: 130,
+//     sfdf: 55
+//   }
+
+//   let sum = 0
+//   for (let key in salaries) {
+//       sum += salaries[key]
+//   }
+//   console.log (sum)
+
+// Tsk 37
+// до вызова функции
+let menu = {
+  width: 200,
+  height: 300,
+  title: "My menu"
+};
+
+function multiplyNumeric (obj) {
+for (let key in obj){
+
+    (typeof (obj[key]) === 'number') ? obj[key] = obj[key]*2 : obj[key] 
 }
 
 
-let sorted = copySorted(arr);
+}
 
-alert( sorted ); // CSS, HTML, JavaScript
-alert( arr ); // HTML, JavaScript, CSS (без изменений)
+
+multiplyNumeric(menu);
+console.log (menu)
+
+// после вызова функции
+menu = {
+  width: 400,
+  height: 600,
+  title: "My menu"
+};
