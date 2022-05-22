@@ -260,3 +260,210 @@
 //     () => alert("Вы согласились."),
 //     () => alert("Вы отменили выполнение.")
 // )
+
+// Task 19
+// let a = +prompt ('input number 1', '')
+// let b = +prompt ('input number 2', '')
+// alert (a+b)
+
+// Task19
+// alert( Math.round (6.35*10)/10 )
+
+// Task 20
+// function readNumber() {
+//     let num
+//     do {
+//         num =   prompt("input NUMBER!!!", '')
+//         if (num ==null || num== ""){
+//             return null
+//         }
+
+//     }
+//     while (!isFinite(num))
+//     return num
+// }
+
+// alert(readNumber())
+
+// Task 21
+// function rand (min, max) {
+
+//     return Math.round ((max-min) *Math.random()+ min)
+// }
+
+// console.log (rand(1, 10))
+// console.log (rand(5, 10))
+// console.log (rand(2, 3))
+// console.log (rand(8, 9))
+// console.log (rand(1, 555))
+
+// Task22
+// let str = "vasya";
+// function ucFirst (){
+//     let str1 = (str[0].toUpperCase() + str.slice(1, str.length ));
+//     return str1
+// }
+
+// console.log (ucFirst ())
+
+// Task 23
+// let str1 = 'buy ViAgRA now';
+// let str2 = 'free xxxxx';
+// let str3 = "innocent rabbit";
+
+// function antiSpam (incomingString) {
+//     let workStr = incomingString.toUpperCase ();
+//     return workStr.includes ("XXX")||workStr.includes("VIAGRA")
+// }
+// console.log (antiSpam (str1))
+// console.log (antiSpam (str2))
+// console.log (antiSpam (str3))
+
+// Task 24
+// let str1 = "Вот, что мне хотелось бы сказать на эту тему:"
+// let str2 = "Всем привет!"
+// function truncate(inStr) {
+
+//     if (inStr.length > 20) {
+//         let truncateStr = (inStr.slice(0,19) + '...')
+//         return truncateStr 
+//     }
+//     else{
+//         return inStr
+//     }
+// }
+
+// console.log(truncate(str1))
+// console.log(truncate(str2))
+
+// Task 25
+// function extractCurrencyValue (str) {
+//     let value = str.slice(1, str.lenght);
+//     return +value
+// }
+
+// alert( extractCurrencyValue('$120') === 120 )
+
+// Task 26
+// let styles = ['jazz', 'blues'];
+// console.log (styles)
+
+// styles.push ('rock-n-roll');
+// console.log (styles)
+
+// styles [ Math.floor((styles.length-1)/2)] = 'classics'
+// console.log (styles)
+
+// styles.shift ()
+// console.log (styles)
+
+// styles.unshift ('rap', 'raggeay')
+// console.log (styles)
+
+// Task 27
+
+// let arr = ["a", "b"];
+
+// arr.push(function() {
+//   alert( this);
+// });
+
+// console.log (arr [2]())
+
+// Task 28
+
+// function sumInput() {
+//     let sumArr = []
+//     let inputNumber = 0
+//     let summ = 0
+//     while (inputNumber >= 0 && inputNumber != null) {
+//         sumArr.push(inputNumber)
+//         inputNumber = prompt("Input number", '');
+
+//     }
+// for (let i = 0; i < sumArr.length; i++)
+// summ = summ + (+sumArr [i])
+// return summ
+
+// }
+// console.log(sumInput())
+
+// Task 29
+// function camelize(str) {
+//     let arr = str.split('')
+//     arr.map(
+//         function (item, index) {
+//             if (item === "-") {
+//                 arr.splice(index, 1)
+//                 arr[index] = arr[index].toUpperCase()
+//             }
+//         }
+//     )
+//     let strOut = arr.join("")
+
+//     return strOut
+// }
+
+// console.log(camelize("background-color"))
+// console.log(camelize("list-style-image"))
+// console.log(camelize("-webkit-transition"))
+
+// Task 30
+
+// let arr = [5, 3, 8, 1];
+// function filterRange (arr, a, b) {
+//     let results = arr.filter (item => (item >= a && item <= b))
+
+// return results
+// }
+
+
+// let filtered = filterRange(arr, 1, 4);
+
+// alert( filtered ); // 3,1 (совпадающие значения)
+
+// alert( arr ); // 5,3,8,1 (без изменений)
+
+// Task 31
+
+// let arr = [5, 3, 8, 1];
+
+// function filterRangeInPlace(arr, a, b) {
+//     arr.map ( function (item, index) {
+//         if (item < a || item > b) {
+//             arr.splice (index, 1)
+//         }
+//     }
+//     )
+// return arr
+// }
+
+// filterRangeInPlace(arr, 1, 4); // удалены числа вне диапазона 1..4
+
+// alert(arr); // [3, 1]
+
+// Task 32
+// let arr = [5, 2, 1, -10, 8];
+// function compareNumeric(a, b) {
+//     if (a > b) return -1;
+//     if (a == b) return 0;
+//     if (a < b) return 1;
+//   }
+
+// arr.sort(compareNumeric )
+
+// alert( arr ); // 8, 5, 2, 1, -10
+
+// Task 33
+
+let arr = ["HTML", "JavaScript", "CSS"];
+function copySorted(arr) {
+    let result = arr.slice(). sort ()
+    return result
+}
+
+
+let sorted = copySorted(arr);
+
+alert( sorted ); // CSS, HTML, JavaScript
+alert( arr ); // HTML, JavaScript, CSS (без изменений)
