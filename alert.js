@@ -508,30 +508,73 @@
 //   }
 //   console.log (sum)
 
-// Tsk 37
+// Task 37
 // до вызова функции
-let menu = {
-  width: 200,
-  height: 300,
-  title: "My menu"
-};
+// let menu = {
+//   width: 200,
+//   height: 300,
+//   title: "My menu"
+// };
 
-function multiplyNumeric (obj) {
-for (let key in obj){
+// function multiplyNumeric (obj) {
+// for (let key in obj){
 
-    (typeof (obj[key]) === 'number') ? obj[key] = obj[key]*2 : obj[key] 
-}
-
-
-}
+//     (typeof (obj[key]) === 'number') ? obj[key] = obj[key]*2 : obj[key] 
+// }
 
 
-multiplyNumeric(menu);
-console.log (menu)
+// }
 
-// после вызова функции
-menu = {
-  width: 400,
-  height: 600,
-  title: "My menu"
-};
+
+// multiplyNumeric(menu);
+// console.log (menu)
+
+// // после вызова функции
+// menu = {
+//   width: 400,
+//   height: 600,
+//   title: "My menu"
+// };
+
+// Task 38
+
+// let calculator = {
+//     read() {
+//         this.value1 = +prompt('input value 1', '');
+//         this.value2 = +prompt('input value 2', '')
+//     },
+//     sum() {
+       
+//         return this.value1 + this.value2
+//     },
+//     mul() {
+
+//         return this.value1 * this.value2
+//     },
+// }
+// calculator.read ();
+
+// alert(calculator.sum())
+// alert(calculator.mul())
+
+// Task 39
+// let ladder = {
+//     step: 0,
+//     up() {
+//       this.step++;
+//       return this
+//     },
+//     down() {
+//       this.step--;
+//       return this
+//     },
+//     showStep: function() { // показывает текущую ступеньку
+//       alert( this.step );
+//       return this
+//     }
+//   };
+
+ 
+  
+  
+//   ladder.up().up().down().showStep()
