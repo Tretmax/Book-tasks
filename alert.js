@@ -544,7 +544,7 @@
 //         this.value2 = +prompt('input value 2', '')
 //     },
 //     sum() {
-       
+
 //         return this.value1 + this.value2
 //     },
 //     mul() {
@@ -573,8 +573,215 @@
 //       return this
 //     }
 //   };
-
- 
-  
-  
 //   ladder.up().up().down().showStep()
+
+// Task 40
+// let calculator = new Calculator();
+// calculator.read();
+
+// function Calculator() {
+//     this.read = function (){
+//         this.value1 = +prompt('input value 1', '');
+//         this.value2 = +prompt('input value 2', '');
+//     };
+//     this.sum = function () {
+
+//         return this.value1 + this.value2
+//     };
+//     this.mul = function () {
+
+//         return this.value1 * this.value2
+//     };
+// }
+
+
+// alert("Sum=" + calculator.sum());
+// alert("Mul=" + calculator.mul());
+
+// Task 41
+// let accumulator = new Accumulator(1); // начальное значение 1
+
+// function Accumulator(startValue) {
+//     this.value = startValue
+//     this.read = function () {
+//         let currentValue = +prompt('input number', '');
+//         return this.value = this.value + currentValue;
+
+//     }
+
+// }
+
+// accumulator.read(); // прибавит ввод prompt к текущему значению
+// accumulator.read(); // прибавит ввод prompt к текущему значению
+
+// alert(accumulator.value); // выведет сумму этих значений
+
+// Task42
+
+
+// function Calculator() {
+
+
+//     this.calculate = function (str) {
+//         let arr = str.split(" "),
+//             a = +arr[0],
+//             op = arr[1],
+//             b = +arr[2]
+//         return this.method[op](a, b);
+//     };
+
+//     this.method = {
+//         '+': (a, b) => (a + b),
+//         '-': (a, b) => (a - b),
+//     };
+
+//     this.addMethod = function (name, func) {
+//         this.method[name] = (func)
+
+
+//     }
+
+// }
+
+// let powerCalc = new Calculator;
+// powerCalc.addMethod("*", (a, b) => a * b);
+// powerCalc.addMethod("/", (a, b) => a / b);
+// powerCalc.addMethod("**", (a, b) => a ** b);
+
+// let result = powerCalc.calculate("8 / 3");
+// alert(result); // 8
+
+// Task 43
+// let vasya = { name: "Вася", age: 25 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 28 };
+
+// let users = [ vasya, petya, masha ];
+
+// let names = users.map (item => item.name)
+// alert( names ); // Вася, Петя, Маша
+
+// Task 44
+
+// let vasya = { name: "Вася", surname: "Пупкин", id: 1 };
+// let petya = { name: "Петя", surname: "Иванов", id: 2 };
+// let masha = { name: "Маша", surname: "Петрова", id: 3 };
+
+// let users = [vasya, petya, masha];
+
+// let usersMapped = users.map( item => ({
+//   fullName: item.name + ' ' + item.surname,
+//   id: item.id,
+// }))
+// console.log(usersMapped)
+/*
+usersMapped = [
+  { fullName: "Вася Пупкин", id: 1 },
+  { fullName: "Петя Иванов", id: 2 },
+  { fullName: "Маша Петрова", id: 3 }
+]
+*/
+
+// alert( usersMapped[0].id ) // 1
+// alert( usersMapped[0].fullName ) // Вася Пупкин
+
+// Task 45
+
+// let vasya = { name: "Вася", age: 25 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 28 };
+
+// let arr = [ vasya, petya, masha ];
+
+
+// function sortByAge (arr) {
+// arr.sort (compareNumeric )
+  
+// }
+// function compareNumeric(a, b) {
+//   if (a.age > b.age) return 1;
+//   if (a.age == b.age) return 0;
+//   if (a.age < b.age) return -1;
+// }
+
+// sortByAge(arr);
+
+// // теперь: [vasya, masha, petya]
+// alert(arr[0].name); // Вася
+// alert(arr[1].name); // Маша
+// alert(arr[2].name); // Петя
+
+// Task 46
+// let arr = [1, 2, 3];
+
+// function shuffle (arr){
+//     arr.sort (rand )
+// }
+// function rand () {
+
+//       return Math.random()-0.5
+//         }
+
+
+// shuffle(arr);
+// // arr = [3, 2, 1]
+// console.log (arr)
+
+// shuffle(arr);
+// // arr = [2, 1, 3]
+// console.log (arr)
+
+// shuffle(arr);
+// // arr = [3, 1, 2]
+// console.log (arr)
+
+// Task 47
+
+// let vasya = { name: "Вася", age: 25 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 29 };
+
+// let arr = [ vasya, petya, masha ];
+
+// function getAverageAge(arr){
+// let sumAge = 0;
+// arr.forEach(item => {
+// sumAge=sumAge+item.age
+  
+// }); 
+
+//   return (sumAge/arr.length)
+// }
+
+// alert( getAverageAge(arr) ); // (25 + 30 + 29) / 3 = 28
+
+// let vasya = { name: "Вася", age: 25 };
+// let petya = { name: "Петя", age: 30 };
+// let masha = { name: "Маша", age: 29 };
+
+// let arr = [ vasya, petya, masha ];
+
+// function getAverageAge(arr){
+//   let summ
+//   summ = arr.reduce ((sum, arr) => sum +arr.age,0 )
+//   return summ/arr.length
+  
+// }
+
+// alert( getAverageAge(arr) ); // (25 + 30 + 29) / 3 = 28
+
+// Task 48
+
+function unique(arr) {
+
+
+
+
+
+}
+
+let strings = ["кришна", "кришна", "харе", "харе",
+  "харе", "харе", "кришна", "кришна", ":-O"
+];
+
+alert( unique(strings) ); // кришна, харе, :-O
