@@ -772,16 +772,79 @@ usersMapped = [
 
 // Task 48
 
-function unique(arr) {
+// function unique(arr) {
 
 
 
 
 
-}
+// }
 
-let strings = ["кришна", "кришна", "харе", "харе",
-  "харе", "харе", "кришна", "кришна", ":-O"
-];
+// let strings = ["кришна", "кришна", "харе", "харе",
+//   "харе", "харе", "кришна", "кришна", ":-O"
+// ];
 
-alert( unique(strings) ); // кришна, харе, :-O
+// alert( unique(strings) ); // кришна, харе, :-O
+
+// Task 49
+// function unique(arr) {
+
+//   return Array.from (new Set(arr)) 
+
+// }
+
+// let values = ["Hare", "Krishna", "Hare", "Krishna",
+//   "Krishna", "Krishna", "Hare", "Hare", ":-O"
+// ];
+
+// alert( unique(values) ); // Hare,Krishna,:-O
+
+// Task50
+
+// let arr = ["nap", "teachers", "cheaters", "PAN", "ear", "era", "hectares"];
+// function aclean (arr){
+//   let map = new Map()
+
+//   for (let word of arr){
+    
+   
+//     let sorted = word.toLowerCase().split("").sort().join('');
+//     map.set(sorted, word)
+
+//   console.log(map)
+// }
+
+// return Array.from (map.values())
+// }
+
+// alert( aclean(arr) ); // "nap,teachers,ear" или "PAN,cheaters,era"
+
+// Task 51
+// let salaries = {
+//   "John": 100,
+//   "Pete": 300,
+//   "Mary": 250
+// };
+
+// function sumSalaries (obj){
+// let result = 0
+// let zp = Object.values(obj)
+// for (let value of zp){
+// result = result + value
+// } 
+// return result
+// }
+
+// alert( sumSalaries(salaries) ); // 650
+
+// // Task 52
+// let user = {
+//   name: 'John',
+//   age: 30
+// };
+
+// function count (obj){
+//   return (Object.keys(obj).length)
+// }
+
+// alert( count(user) ); // 2
