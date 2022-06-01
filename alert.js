@@ -848,3 +848,96 @@ usersMapped = [
 // }
 
 // alert( count(user) ); // 2
+
+// Task 53
+
+// let user = { 
+//   name: "John", 
+//   years: 30 };
+
+// // ваш код должен быть с левой стороны:
+// let {name, years:age, isAdmin=false} = user
+
+// alert( name ); // John
+// alert( age ); // 30
+// alert( isAdmin ); // false
+
+// Task 54
+// let salaries = {
+//   "John": 100,
+//   "Pete": 300,
+//   "Mary": 250
+// };
+// function topSalary (obj){
+// let max = 0
+// let maxName = null
+
+//   for (let [name, salary] of Object.entries(obj))
+// if (max<salary) {
+//   max=salary
+//   maxName=name
+// }  
+// return maxName
+
+// }
+
+// console.log( topSalary(salaries))
+
+// Task 55
+//   let d = new Date(2012,1,20,3,12);
+// alert (d)
+
+// Task 56
+// let date = new Date(2012, 0, 3);  // 3 января 2012 года
+
+// function getWeekDay (date){
+//   let days = ['vs','pn','vt','sr','cht','pt','sb']
+//   return days[date.getDay()]
+      
+//   }
+// alert( getWeekDay(date) );        // нужно вывести "ВТ"
+// date = new Date(2014, 0, 3); // 3 января 2014 года
+// alert( getWeekDay(date) ); // ПТ
+
+// Task 57
+// let date = new Date(2015, 0, 2);
+
+// function getDateAgo(date,days){
+//   let outD= new Date(date)
+//     outD.setDate (date.getDate()-days)
+// return  outD
+
+// }
+
+
+// alert( getDateAgo(date, 1) ); // 1, (1 Jan 2015)
+// alert( getDateAgo(date, 2) ); // 31, (31 Dec 2014)
+// alert( getDateAgo(date, 365) ); // 2, (2 Jan 2014)
+
+// Task 57
+function sumTo (a){
+//   let out = 0
+// for(let i=1; i<= a; ++i){
+//   out = out + i
+// console.log(out)
+// }
+// return out
+
+
+let out = a
+if (a===1){
+  out=1
+}
+else{
+
+  out = out + sumTo(out-1)
+}
+return out
+}
+
+
+alert (sumTo(1))
+alert (sumTo(2))
+alert (sumTo(3))
+alert (sumTo(4))
+alert (sumTo(100))
