@@ -915,7 +915,7 @@ usersMapped = [
 // alert( getDateAgo(date, 365) ); // 2, (2 Jan 2014)
 
 // Task 57
-function sumTo (a){
+// function sumTo (a){
 //   let out = 0
 // for(let i=1; i<= a; ++i){
 //   out = out + i
@@ -924,20 +924,50 @@ function sumTo (a){
 // return out
 
 
-let out = a
-if (a===1){
-  out=1
-}
-else{
+// let out = a
+// if (a===1){
+//   out=1
+// }
+// else{
 
-  out = out + sumTo(out-1)
-}
-return out
-}
+//   out = out + sumTo(out-1)
+// }
+// return out
+// }
 
 
-alert (sumTo(1))
-alert (sumTo(2))
-alert (sumTo(3))
-alert (sumTo(4))
-alert (sumTo(100))
+// alert (sumTo(1))
+// alert (sumTo(2))
+// alert (sumTo(3))
+// alert (sumTo(4))
+// alert (sumTo(100))
+
+
+// Task 58
+// function printNumbers(from, to){
+//   let out = from
+// if (out == to){
+
+//   alert (out)
+// }
+// else{
+//   alert (out)
+//   out=out+1
+// setTimeout (printNumbers, 5000, out, to)
+
+// }
+
+// }
+
+// printNumbers(5, 11)
+
+// Task 59
+// function delay(ms) {
+//  return  new Promise (function (resolve , reject){
+// setTimeout ( resolve ,ms)
+
+//  })
+
+// }
+
+// delay(3000).then(() => alert('выполнилось через 3 секунды'));
